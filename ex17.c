@@ -137,13 +137,13 @@ void Database_list(struct Connection *conn)
 }
 
 int main(int argc, char *argv[]) {
-  if (argc < 3) die("Usage: ex17 <dbfile> <action> [action params]");
+  //if (argc < 3) die("Usage: ex17 <dbfile> <action> [action params]");
   printf("yes");
 
-  char *filename = argv[1];
-//  char *filename = "db.txt";
-  char action = argv[2][0];
-  //char action = 'c';
+//  char *filename = argv[1];
+  char *filename = "db.txt";
+  //char action = argv[2][0];
+  char action = 'c';
   struct Connection *conn = Database_open(filename, action);
   int id = 0;
   struct Address thing = conn->db->rows[99];
