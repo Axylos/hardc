@@ -114,6 +114,7 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
 
   res = strncpy(addr->email, email, MAX_DATA);
   if(!res) die("Email copy failed");
+  res[-1] = '\0';
 }
 
 void Database_get(struct Connection *conn, int id)

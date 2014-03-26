@@ -13,11 +13,12 @@ all:
 	gcc stuff.c -o stuff
 	gcc ex16.c -o ex16
 	gcc ex17.c -o ex17
+	gcc ex18.c -o ex18
 	ls
 
 CFLAGS=-Wall -g
 
 clean:
-	rm -f hello ex3 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 stuff ex15 ex16 ex17
+	rm -f hello ex3 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 stuff ex15 ex16 ex17 ex18
 	ls
 
